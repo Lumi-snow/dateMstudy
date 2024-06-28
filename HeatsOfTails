@@ -10,7 +10,7 @@ public class coin {
 
         System.out.println("Who are you?");
         String name = scanner.nextLine();
-        Systrm.out.println("Hello, "+name+"!")
+        System.out.println("Hello, "+name+"!")
 
         System.out.println("Tossing a coin...");
 
@@ -21,15 +21,15 @@ public class coin {
             } else {
                 tailsCount++;
             }
-            System.out.println("Round " + round + ": " + result);
+            System.out.println("Round " + i + ": " + result);
         }
 
         System.out.println("Heads: " + headsCount + ", Tails: " + tailsCount);
 
-        if(headCount > tailCount){
-            System.out.println("You won");
+        if(headsCount > tailsCount){
+            System.out.println(name+" won");
         }else{
-            System.out.println("You lost");
+            System.out.println(name+"You lost");
         }
     }
 }
